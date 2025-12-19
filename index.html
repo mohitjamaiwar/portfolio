@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohit Jamaiwar | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fira Code', monospace;
+    }
+
+    body {
+      background-color: #0A192F;
+      color: #CCD6F6;
+      padding: 30px;
+    }
+
+    a {
+      color: #64FFDA;
+      text-decoration: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #8892B0;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #64FFDA;
+      border-bottom: 2px solid #64FFDA;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: #112240;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #233554;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #64FFDA;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      color: #8892B0;
+    }
+
+    .about {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+      color: #8892B0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: #557;
+    }
+  .glow-img {
+    max-width: 280px;
+    border-radius: 15px;
+    border: 3px solid #00ffcc;
+    box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
+
+  .glow-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffcc, 0 0 45px #00ffcc;
+  }
+  
+    #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.3) contrast(1.1);
+  }
+  body {
+    background: transparent;
+  }
+
+  #typed-text {
+  display: inline;
+  color: #00ffcc;
+  font-size: 1.4rem;
+}
+
+.typed-cursor {
+  display: inline;
+  color: #00ffcc;
+  font-weight: bold;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+  </style>
+</head>
+<body>
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+  <source src="bg.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+<!-- header----------- -->
+<section style="display: flex; justify-content: space-between; align-items: center; padding: 40px 20px; background-color: #0d1117; flex-wrap: wrap; border-radius: 20px;">
+  <div style="flex: 1; min-width: 250px;">
+    <h1 style="color: #c9d1d9; font-size: 3em;">Mohit Jamaiwar</h1>
+    <!--running text -->
+    <h2>
+  <span id="typed-text"></span><span class="typed-cursor">|</span>
+</h2>
+  </div>
+  <div style="flex: 0 0 auto; margin-top: 20px;">
+    <img src="profile.jpg" alt="My Photo" style="max-width: 150px; border-radius: 12px; border: 2px solid #00ffcc; box-shadow: 0 0 10px #00ffcc;">
+  </div>
+</section>
+<br>
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Keylogger Detector</h3>
+        <p>A Windows tool to detect suspicious keylogging behavior.</p>
+        <a href="#">GitHub ↗</a>
+      </div>
+      <div class="card">
+        <h3>Vulnerability Scanner</h3>
+        <p>Scans websites for open ports and outdated services.</p>
+        <a href="#">GitHub ↗</a>
+      </div>
+      <div class="card">
+        <h3>Password Strength Checker</h3>
+        <p>Checks password strength using entropy and rule-based logic.</p>
+        <a href="#">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I'm Ravi — a cybersecurity enthusiast who's passionate about securing the digital world.  
+      From ethical hacking labs to building tools that expose threats, I'm on a mission to learn, break, and defend.  
+      Let's connect if you're hiring someone who can break it just to build it better 🔐✨
+    </p>
+  </section>
+  <!-- Resume Section -->
+<section style="text-align: center; margin: 60px 0;">
+  <h2 class="section-title">Resume</h2>
+  <p style="color: #8892B0; margin-bottom: 20px;">
+    Download my updated resume in PDF format:
+  </p>
+  <a href="Post Lab Practical.pdf" download 
+     style="padding: 10px 20px; background: #64FFDA; color: #0A192F; border-radius: 5px; font-weight: bold; text-decoration: none;">
+    ⬇️ Download Resume
+  </a>
+</section>
+
+<!-- Certificates Section -->
+<section>
+  <h2 class="section-title">Certificates</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>TryHackMe - Cybersecurity Essentials</h3>
+      <p>Hands-on learning of real-world security attacks & defense.</p>
+      <a href="#" target="_blank">View Certificate ↗</a>
+    </div>
+    <div class="card">
+      <h3>Coursera - Network Security</h3>
+      <p>Completed course on network vulnerabilities & protocols.</p>
+      <a href="#" target="_blank">View Certificate ↗</a>
+    </div>
+    <div class="card">
+      <h3>HackerRank - Problem Solving</h3>
+      <p>Demonstrated strong logical thinking with verified badge.</p>
+      <a href="#" target="_blank">View Certificate ↗</a>
+    </div>
+  </div>
+</section>
+
+  
+  <footer>
+    ⛓️ Portfolio secured & signed by ChatGPT 🖤
+  </footer>
+<script>
+var typed = new Typed("#typed-text", {
+  strings: [
+    "Cybersecurity Enthusiast 💻"],
+  typeSpeed: 50,
+  backSpeed: 30,
+  backDelay: 1500,
+  loop: true,
+  showCursor: false // We added custom blinking cursor
+});
+</script>
+</body>
+</html>
